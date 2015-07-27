@@ -520,7 +520,8 @@ int     aft_fontwidth(int c,byte isbig);
 int     aft_spacewidth(byte isbig);
 byte    aft_fontheight(byte isbig);
 byte    aft_load(const char * source_name, int size, byte isbig,char * relativeto);
-byte    aft_drawfont(CANVAS * _b, byte isbig, int fpos, int xpos, int ypos, color cl,byte underline,byte bold);
+// byte    aft_drawfont(CANVAS * _b, byte isbig, int fpos, int xpos, int ypos, color cl,byte underline,byte bold);
+byte aft_drawfont(CANVAS * _b, byte isbig, int fpos, int xpos, int ypos, color cl, byte underline, byte bold, byte italic, byte lcd);
 // byte    aft_loadfont(char * zpath, byte size, byte isbig);
 
 //
@@ -614,7 +615,8 @@ byte  ag_loadbigfont(char * fontname, byte is_freetype, char * relativeto); // L
 void  ag_closefonts();                                // Release Big & Small Fonts
 byte  ag_drawchar(CANVAS *_b,int x, int y, int c,    // Draw Character into Canvas
         color cl, byte isbig);
-byte ag_drawchar_ex(CANVAS *_b,int x, int y, int c, color cl, byte isbig, byte underline, byte bold);
+//byte ag_drawchar_ex(CANVAS *_b,int x, int y, int c, color cl, byte isbig, byte underline, byte bold);
+byte ag_drawchar_ex(CANVAS * _b, int x, int y, int c, color cl, byte isbig, byte underline, byte bold, byte italic);
 byte  ag_text(CANVAS *_b,int maxwidth,int x,int y,    // Draw String into Canvas
         const char *s, color cl,byte isbig);
 byte  ag_textf(CANVAS *_b,int maxwidth,int x,int y,    // Draw String into Canvas

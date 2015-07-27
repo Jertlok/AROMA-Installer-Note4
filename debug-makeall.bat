@@ -12,7 +12,7 @@ echo.
 echo * Compiling... This may take a moments...
 echo.
 
-D:\DevelTools\cndk\bin\arm-none-linux-gnueabi-gcc -g ^
+C:\mgc\embedded\bin\arm-none-linux-gnueabi-gcc -g ^
   -save-temps ^
   -static ^
   -Wl,-s -Werror ^

@@ -10,7 +10,7 @@ echo.
 echo * Compiling... This may take a moments...
 echo.
 
-D:\DevelTools\cndk\bin\arm-none-linux-gnueabi-gcc -g ^
+C:\mgc\embedded\bin\arm-none-linux-gnueabi-gcc -g ^
   -static ^
   -Wl,-s -Werror ^
   -DFT2_BUILD_LIBRARY=1 ^

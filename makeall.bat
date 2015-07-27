@@ -12,7 +12,7 @@ echo.
 echo * Compiling... This may take a moments...
 echo.
 
-C:\mgc\embedded\codebench\bin\arm-none-linux-gnueabi-gcc ^
+C:\mgc\embedded\bin\arm-none-linux-gnueabi-gcc ^
   -save-temps ^
   -Os -static -fdata-sections ^
   -ffunction-sections ^
@@ -26,13 +26,13 @@ C:\mgc\embedded\codebench\bin\arm-none-linux-gnueabi-gcc ^
   -DDARWIN_NO_CARBON ^
     ^
       ../libs/zlib/adler32.c ^
-      ../libs/zlib/adler32_arm.c ^
       ../libs/zlib/crc32.c ^
       ../libs/zlib/infback.c ^
       ../libs/zlib/inffast.c ^
       ../libs/zlib/inflate.c ^
       ../libs/zlib/inftrees.c ^
       ../libs/zlib/zutil.c ^
+      ^
       ../libs/png/png.c ^
       ../libs/png/pngerror.c ^
       ../libs/png/pnggccrd.c ^
@@ -46,20 +46,20 @@ C:\mgc\embedded\codebench\bin\arm-none-linux-gnueabi-gcc ^
       ../libs/png/pngset.c ^
       ../libs/png/pngtrans.c ^
       ../libs/png/pngvcrd.c ^
+      ^
       ../libs/minutf8/minutf8.c ^
       ../libs/minzip/DirUtil.c ^
       ../libs/minzip/Hash.c ^
       ../libs/minzip/Inlines.c ^
       ../libs/minzip/SysUtil.c ^
       ../libs/minzip/Zip.c ^
+      ^
       ../libs/freetype/autofit/autofit.c ^
       ../libs/freetype/base/basepic.c ^
       ../libs/freetype/base/ftapi.c ^
       ../libs/freetype/base/ftbase.c ^
       ../libs/freetype/base/ftbbox.c ^
       ../libs/freetype/base/ftbitmap.c ^
-      ../libs/freetype/base/ftdbgmem.c ^
-      ../libs/freetype/base/ftdebug.c ^
       ../libs/freetype/base/ftglyph.c ^
       ../libs/freetype/base/ftinit.c ^
       ../libs/freetype/base/ftpic.c ^
@@ -73,7 +73,8 @@ C:\mgc\embedded\codebench\bin\arm-none-linux-gnueabi-gcc ^
       ../libs/freetype/sfnt/sfnt.c ^
       ../libs/freetype/smooth/smooth.c ^
       ../libs/freetype/truetype/truetype.c ^
-    ^
+      ../libs/freetype/base/ftlcdfil.c ^
+      ^
   	  ../src/edify/*.c ^
   	  ../src/libs/*.c ^
   	  ../src/controls/*.c ^
@@ -102,4 +103,3 @@ echo CTRL-C = Exit, Enter = Deploy
 echo.
 pause
 echo.
-deploy.bat

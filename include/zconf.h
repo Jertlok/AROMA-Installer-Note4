@@ -359,7 +359,12 @@ typedef uLong FAR uLongf;
 #ifdef STDC
    typedef void const *voidpc;
    typedef void FAR   *voidpf;
+
+/* Conflict With AROMA Core voidp */
+#ifndef __AROMA_CORE_TYPES_H__
    typedef void       *voidp;
+#endif
+
 #else
    typedef Byte const *voidpc;
    typedef Byte FAR   *voidpf;

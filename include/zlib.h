@@ -212,6 +212,9 @@ typedef gz_header FAR *gz_headerp;
 
 
                         /* basic functions */
+#ifdef __ARM_HAVE_NEON
+ZEXTERN char ZEXPORT ZLIB_IS_NEON_SUPPORT();
+#endif
 
 ZEXTERN const char * ZEXPORT zlibVersion OF((void));
 /* The application can compare zlibVersion and ZLIB_VERSION for consistency.

@@ -10,7 +10,7 @@ echo.
 echo * Compiling... This may take a moments...
 echo.
 
-C:\mgc\embedded\codebench\bin\arm-none-linux-gnueabi-gcc ^
+C:\mgc\embedded\bin\arm-none-linux-gnueabi-gcc ^
   -Os -static -fdata-sections ^
   -ffunction-sections ^
   -Wl,--gc-sections ^
@@ -46,4 +46,3 @@ echo CTRL-C = Exit, Enter = Deploy
 echo.
 pause
 echo.
-deploy.bat
