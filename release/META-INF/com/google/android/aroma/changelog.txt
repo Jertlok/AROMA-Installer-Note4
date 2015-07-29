@@ -1,6 +1,7 @@
 <b><#selectbg_g>EDELWEIS - 2.55</#></b>
 <*>Completely new Input/Touchscreen Handler</*>
 <*>Remove all calibration need. calibtool(), calibrate() and calibrate_matrix() won't do anything now. :)</*>
+<*>Added support for the Note 4 (Qualcomm version)</*>
 
 <b><#selectbg_g>EDELWEIS - 2.51</#></b>
 <*>Add Support for Galaxy Nexus</*>
